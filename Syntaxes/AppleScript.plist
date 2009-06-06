@@ -93,7 +93,7 @@
 					<key>begin</key>
 					<string>^(?x)
 						\s*(to|on)\s+ 					# "on" or "to"
-						([A-Za-z][A-Za-z0-9_]*)			# function name
+						(\w+)							# function name
 						(\()							# opening paren
 							(?:(\w+(?:\s*,\s*\w+)*))?	# parameters
 						(\))							# closing paren
