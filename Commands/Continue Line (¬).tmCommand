@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
@@ -7,9 +7,10 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-if head -n$((TM_LINE_NUMBER-1)) | tail -n1 | grep -sq '¬$'
-  then echo -en '¬\n'
-  else echo -en '¬\n\t'
+if sed -n "$((TM_LINE_NUMBER-1))p" | grep -sq '¬$'; then
+	echo -ne '¬\n'
+else
+	echo -ne '¬\n\t'
 fi
 </string>
 	<key>input</key>
