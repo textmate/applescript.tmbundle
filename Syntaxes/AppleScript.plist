@@ -65,15 +65,10 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end(?:\s+(script))?)(?=\s*(--.*?)?$)</string>
+					<string>^\s*(end(?:\s+script)?)(?=\s*(--.*?)?$)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.script.applescript</string>
-						</dict>
-						<key>2</key>
 						<dict>
 							<key>name</key>
 							<string>keyword.control.script.applescript</string>
