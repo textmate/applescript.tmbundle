@@ -185,6 +185,8 @@
 							<string>variable.parameter.handler.direct.applescript</string>
 						</dict>
 					</dict>
+					<key>comment</key>
+					<string>TODO: match `given` parameters</string>
 					<key>end</key>
 					<string>^\s*(end)(?:\s+(\2))?(?=\s*(--.*?)?$)</string>
 					<key>endCaptures</key>
@@ -214,7 +216,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>\b(above|against|apart from|around|aside from|at|below|beneath|beside|between|by|for|from|instead of|into|on|onto|out of|over|thru|under)\s+(\w+)\b</string>
+							<string>\b(above|against|apart\s+from|around|aside\s+from|at|below|beneath|beside|between|by|for|from|instead\s+of|into|on|onto|out\s+of|over|thru|under)\s+(\w+)\b</string>
 						</dict>
 						<dict>
 							<key>include</key>
