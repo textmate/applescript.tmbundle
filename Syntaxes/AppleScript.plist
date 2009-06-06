@@ -337,6 +337,20 @@
 						</dict>
 					</dict>
 					<key>match</key>
+					<string>^\s*(#!).*$\n?</string>
+					<key>name</key>
+					<string>comment.line.number-sign.applescript</string>
+				</dict>
+				<dict>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.applescript</string>
+						</dict>
+					</dict>
+					<key>match</key>
 					<string>(--).*$\n?</string>
 					<key>name</key>
 					<string>comment.line.double-dash.applescript</string>
