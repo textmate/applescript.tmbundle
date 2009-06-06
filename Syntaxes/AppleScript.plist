@@ -142,7 +142,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.block.function.positional.applescript</string>
+					<string>meta.function.positional.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -198,7 +198,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.block.function.prepositional.applescript</string>
+					<string>meta.function.prepositional.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -255,7 +255,7 @@
 						</dict>
 					</dict>
 					<key>name</key>
-					<string>meta.block.function.parameterless.applescript</string>
+					<string>meta.function.parameterless.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
