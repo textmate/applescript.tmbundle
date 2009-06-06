@@ -999,7 +999,7 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:textmate)")(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:textmate)")(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1032,7 +1032,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:finder)")(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:finder)")(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1065,7 +1065,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:system events)")(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:system events)")(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1098,7 +1098,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:itunes)")(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?=app(lication)?\s+"(?i:itunes)")(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1131,7 +1131,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\b)(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?=app(lication)?\b)(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
@@ -1160,66 +1160,7 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(tell)\s+(?=app(lication)?\b)(?=.*?to tell\s*(?!.*\bto\b))</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.applescript</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>tell ... to tell generic application</string>
-					<key>end</key>
-					<string>^\s*(end)(?:\s+tell)?(?=\s*(--.*?)?$)</string>
-					<key>name</key>
-					<string>meta.block.tell.application.generic.applescript</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>#standard-suite</string>
-						</dict>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>^\s*(tell)\s+.*?(to tell)\s*(?!.*\bto\b)</string>
-					<key>captures</key>
-					<dict>
-						<key>1</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.applescript</string>
-						</dict>
-						<key>2</key>
-						<dict>
-							<key>name</key>
-							<string>keyword.control.applescript</string>
-						</dict>
-					</dict>
-					<key>comment</key>
-					<string>generic tell ... to tell block</string>
-					<key>end</key>
-					<string>^\s*(end)(?:\s+tell)?(?=\s*(--.*?)?$)</string>
-					<key>name</key>
-					<string>meta.block.tell.generic.applescript</string>
-					<key>patterns</key>
-					<array>
-						<dict>
-							<key>include</key>
-							<string>$self</string>
-						</dict>
-					</array>
-				</dict>
-				<dict>
-					<key>begin</key>
-					<string>^\s*(tell)\s+(?!.*\bto\b)</string>
+					<string>^\s*(tell)\s+(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
 						<key>1</key>
