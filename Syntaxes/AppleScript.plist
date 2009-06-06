@@ -323,6 +323,35 @@
 				</dict>
 			</array>
 		</dict>
+		<key>comment-contents</key>
+		<dict>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>begin</key>
+					<string>\(\*</string>
+					<key>captures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.applescript</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>\*\)</string>
+					<key>name</key>
+					<string>comment.block.applescript</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#comment-contents</string>
+						</dict>
+					</array>
+				</dict>
+			</array>
+		</dict>
 		<key>comments</key>
 		<dict>
 			<key>patterns</key>
@@ -370,6 +399,13 @@
 					<string>\*\)</string>
 					<key>name</key>
 					<string>comment.block.applescript</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#comment-contents</string>
+						</dict>
+					</array>
 				</dict>
 			</array>
 		</dict>
