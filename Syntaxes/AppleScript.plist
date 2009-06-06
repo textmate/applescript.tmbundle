@@ -1372,7 +1372,7 @@
 					<key>comment</key>
 					<string>In double quotes so we can use a single quote in the keywords.</string>
 					<key>match</key>
-					<string>(i?x)\b
+					<string>(?ix)\b
 						(is(n't|\s+not)?(\s+(equal(\s+to)?|(less|greater)\s+than(\s+or\s+equal(\s+to)?)?|in|contained\s+by))?
 						|does(n't|\s+not)\s+(equal|come\s+(before|after)|contain)
 						)
@@ -1470,7 +1470,14 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(?i:(cubic |square |cubic centi|square kilo|centi|kilo)met(er|re)s|(square |cubic )?(yards|feet)|(square )?miles|(cubic )?inches|lit(re|er)s|gallons|quarts|(kilo)?grams|ounces|pounds|degrees (Celsius|Fahrenheit|Kelvin))\b</string>
+					<string>(?ix)\b
+						(	(cubic\s+(centi)?|square\s+(kilo)?|centi|kilo)met(er|re)s
+						|	square\s+(yards|feet|miles)|cubic\s+(yards|feet|inches)|miles|inches
+						|	lit(re|er)s|gallons|quarts
+						|	(kilo)?grams|ounces|pounds
+						|	degrees\s+(Celsius|Fahrenheit|Kelvin)
+						)
+					\b</string>
 					<key>name</key>
 					<string>support.class.built-in.unit.applescript</string>
 				</dict>
