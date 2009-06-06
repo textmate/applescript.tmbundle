@@ -19,8 +19,8 @@
 		|if\b .* \bthen\b
 		|repeat\b .*
 		|( on | to )\b (?!\s+ error) .*
-		|try
-		|with \s+ timeout .*
+		|try\b
+		|with \s+ timeout\b .*
 		|script\b .*
 		|( considering | ignoring )\b .*
 		)\s*(--.*?)?$
