@@ -67,7 +67,7 @@
 					<key>end</key>
 					<string>^\s*(end(?:\s+script)?)\s*(--.*?)?$</string>
 					<key>name</key>
-					<string>meta.script.applescript</string>
+					<string>meta.block.script.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -121,7 +121,7 @@
 					<key>end</key>
 					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
 					<key>name</key>
-					<string>meta.function.with-parentheses.applescript</string>
+					<string>meta.block.function.positional.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -149,7 +149,7 @@
 					<key>end</key>
 					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
 					<key>name</key>
-					<string>meta.function.prepositional.applescript</string>
+					<string>meta.block.function.prepositional.applescript</string>
 					<key>patterns</key>
 					<array>
 						<dict>
