@@ -7,15 +7,9 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-# If there is a local copy of the Applescript
-# documentation, open it.  Otherwise, use the
-# online copy.
+# The AppleScript Reference Library at the Apple Developer Connection.
 
-if [ -d "/Developer/ADC Reference Library/documentation/AppleScript/Conceptual/AppleScriptLangGuide/" ]; then
-	open "file:///Developer/ADC%20Reference%20Library/documentation/AppleScript/Conceptual/AppleScriptLangGuide/index.html"
-else
-	open "http://developer.apple.com/documentation/AppleScript/Conceptual/AppleScriptLangGuide/"
-fi
+open "https://developer.apple.com/referencelibrary/ScriptingAutomation/idxAppleScript-date.html"
 </string>
 	<key>fallbackInput</key>
 	<string>scope</string>
@@ -24,12 +18,12 @@ fi
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
-	<string>AppleScript Language Guide</string>
+	<string>AppleScript Reference Library</string>
 	<key>output</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>uuid</key>
-	<string>C744043F-79AE-47D7-9E7A-F476F44437AC</string>
+	<string>1A8892FB-D466-492D-A35C-DFF2C6168174</string>
 </dict>
 </plist>

@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-# A list of useful applescript resources at apple.com
+# The AppleScript Release Notes at apple.com
 
 open "http://developer.apple.com/releasenotes/AppleScript/RN-AppleScript/"</string>
 	<key>fallbackInput</key>

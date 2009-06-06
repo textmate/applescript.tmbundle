@@ -10,7 +10,6 @@
 # A list of useful applescript resources at apple.com
 
 open "http://developer.apple.com/applescript/"
-
 </string>
 	<key>fallbackInput</key>
 	<string>scope</string>
