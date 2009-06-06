@@ -225,6 +225,46 @@
 					</array>
 				</dict>
 				<dict>
+					<key>begin</key>
+					<string>^(?x)
+						\s*(to|on)\s+ 					# "on" or "to"
+						(\w+)							# function name
+						(?=\s*(--.*?)?$)				# nothing else
+					</string>
+					<key>beginCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.function.applescript</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>entity.name.function.handler.applescript</string>
+						</dict>
+					</dict>
+					<key>end</key>
+					<string>^\s*(end)(?:\s+(\2))?(?=\s*(--.*?)?$)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.function.applescript</string>
+						</dict>
+					</dict>
+					<key>name</key>
+					<string>meta.block.function.parameterless.applescript</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
 					<key>include</key>
 					<string>#tell-blocks</string>
 				</dict>
