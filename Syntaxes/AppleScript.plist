@@ -51,7 +51,7 @@
 				<dict>
 					<key>begin</key>
 					<string>^\s*(script)\s+(\w+)</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
@@ -65,7 +65,20 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end(?:\s+script)?)\s*(--.*?)?$</string>
+					<string>^\s*(end(?:\s+(script))?)\s*(--.*?)?$</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.script.applescript</string>
+						</dict>
+						<key>2</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.script.applescript</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>meta.block.script.applescript</string>
 					<key>patterns</key>
@@ -85,12 +98,12 @@
 							(?:(\w+(?:\s*,\s*\w+)*))?	# parameters
 						(\))							# closing paren
 					</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.on.applescript</string>
+							<string>keyword.control.function.applescript</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -120,6 +133,14 @@
 					</string>
 					<key>end</key>
 					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.function.applescript</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>meta.block.function.positional.applescript</string>
 					<key>patterns</key>
@@ -133,12 +154,12 @@
 				<dict>
 					<key>begin</key>
 					<string>^\s*(on)\s+(\w+)(?=\s+(above|against|apart from|around|aside from|at|below|beneath|beside|between|by|for|from|instead of|into|on|onto|out of|over|thru|under)\s+)</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.on.applescript</string>
+							<string>keyword.control.function.applescript</string>
 						</dict>
 						<key>2</key>
 						<dict>
@@ -148,6 +169,14 @@
 					</dict>
 					<key>end</key>
 					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.function.applescript</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>meta.block.function.prepositional.applescript</string>
 					<key>patterns</key>
