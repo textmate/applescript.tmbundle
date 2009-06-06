@@ -241,7 +241,7 @@
 								</dict>
 							</dict>
 							<key>match</key>
-							<string>\b(above|against|apart\s+from|around|aside\s+from|at|below|beneath|beside|between|by|for|from|instead\s+of|into|on|onto|out\s+of|over|thru|under)\s+(\w+)\b</string>
+							<string>\b(?i:above|against|apart\s+from|around|aside\s+from|at|below|beneath|beside|between|by|for|from|instead\s+of|into|on|onto|out\s+of|over|thru|under)\s+(\w+)\b</string>
 						</dict>
 						<dict>
 							<key>include</key>
@@ -506,7 +506,7 @@
 							<array>
 								<dict>
 									<key>match</key>
-									<string>\b(number|partial|from|to)\b</string>
+									<string>\b(?i:number|partial|from|to)\b</string>
 									<key>name</key>
 									<string>keyword.control.exception.modifier.applescript</string>
 								</dict>
@@ -1359,7 +1359,7 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>(?x)\b
+					<string>(?ix)\b
 						(and|or|div|mod|as|not
 						|(a\s+)?(ref(\s+to)?|reference\s+to)
 						|equal(s|\s+to)|contains?|comes\s+(after|before)|(start|begin|end)s?\s+with
@@ -1369,8 +1369,10 @@
 					<string>keyword.operator.word.applescript</string>
 				</dict>
 				<dict>
+					<key>comment</key>
+					<string>In double quotes so we can use a single quote in the keywords.</string>
 					<key>match</key>
-					<string>(?x)\b
+					<string>(i?x)\b
 						(is(n't|\s+not)?(\s+(equal(\s+to)?|(less|greater)\s+than(\s+or\s+equal(\s+to)?)?|in|contained\s+by))?
 						|does(n't|\s+not)\s+(equal|come\s+(before|after)|contain)
 						)
@@ -1380,19 +1382,19 @@
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(some|every|whose|where|that|id|index|\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|last|front|back|middle|named|beginning|end|from|to|thr(u|ough)|before|(front|back|beginning|end)\s+of|after|behind|in\s+(front|back|beginning|end)\s+of)\b</string>
+					<string>\b(?i:some|every|whose|where|that|id|index|\d+(st|nd|rd|th)|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|last|front|back|middle|named|beginning|end|from|to|thr(u|ough)|before|(front|back|beginning|end)\s+of|after|behind|in\s+(front|back|beginning|end)\s+of)\b</string>
 					<key>name</key>
 					<string>keyword.operator.reference.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(continue|return|exit(\s+repeat)?)\b</string>
+					<string>\b(?i:continue|return|exit(\s+repeat)?)\b</string>
 					<key>name</key>
 					<string>keyword.control.loop.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(about|above|after|against|and|apart\s+from|around|as|aside\s+from|at|back|before|beginning|behind|below|beneath|beside|between|but|by|considering|contain|contains|contains|copy|div|does|eighth|else|end|equal|equals|error|every|false|fifth|first|for|fourth|from|front|get|given|global|if|ignoring|in|instead\s+of|into|is|it|its|last|local|me|middle|mod|my|ninth|not|of|on|onto|or|out\s+of|over|prop|property|put|ref|reference|repeat|returning|script|second|set|seventh|since|sixth|some|tell|tenth|that|the|then|third|through|thru|timeout|times|to|transaction|true|try|until|where|while|whose|with|without)\b</string>
+					<string>\b(?i:about|above|after|against|and|apart\s+from|around|as|aside\s+from|at|back|before|beginning|behind|below|beneath|beside|between|but|by|considering|contain|contains|contains|copy|div|does|eighth|else|end|equal|equals|error|every|false|fifth|first|for|fourth|from|front|get|given|global|if|ignoring|in|instead\s+of|into|is|it|its|last|local|me|middle|mod|my|ninth|not|of|on|onto|or|out\s+of|over|prop|property|put|ref|reference|repeat|returning|script|second|set|seventh|since|sixth|some|tell|tenth|that|the|then|third|through|thru|timeout|times|to|transaction|true|try|until|where|while|whose|with|without)\b</string>
 					<key>name</key>
 					<string>keyword.other.applescript</string>
 				</dict>
@@ -1432,49 +1434,49 @@
 			<array>
 				<dict>
 					<key>match</key>
-					<string>\b(POSIX\s+path|frontmost|id|name|running|version|days?|weekdays?|months?|years?|time|date\s+string|time\s+string|length|rest|reverse|items?|contents|quoted\s+form|characters?|paragraphs?|words?)\b</string>
+					<string>\b(?i:POSIX\s+path|frontmost|id|name|running|version|days?|weekdays?|months?|years?|time|date\s+string|time\s+string|length|rest|reverse|items?|contents|quoted\s+form|characters?|paragraphs?|words?)\b</string>
 					<key>name</key>
 					<string>support.function.built-in.property.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(activate|log|clipboard\s+info|set\s+the\s+clipboard\s+to|the\s+clipboard|info\s+for|list\s+(disks|folder)|mount\s+volume|path\s+to(\s+resource)?|close\s+access|get\s+eof|open\s+for\s+access|read|set\s+eof|write|open\s+location|current\s+date|do\s+shell\s+script|get\s+volume\s+settings|random\s+number|round|set\s+volume|system\s+(attribute|info)|time\s+to\s+GMT|load\s+script|run\s+script|scripting\s+components|store\s+script|copy|count|get|launch|run|set|ASCII\s+(character|number)|localized\s+string|offset|summarize|beep|choose\s+(application|color|file(\s+name)?|folder|from\s+list|remote\s+application|URL)|delay|display\s+(alert|dialog)|say)\b</string>
+					<string>\b(?i:activate|log|clipboard\s+info|set\s+the\s+clipboard\s+to|the\s+clipboard|info\s+for|list\s+(disks|folder)|mount\s+volume|path\s+to(\s+resource)?|close\s+access|get\s+eof|open\s+for\s+access|read|set\s+eof|write|open\s+location|current\s+date|do\s+shell\s+script|get\s+volume\s+settings|random\s+number|round|set\s+volume|system\s+(attribute|info)|time\s+to\s+GMT|load\s+script|run\s+script|scripting\s+components|store\s+script|copy|count|get|launch|run|set|ASCII\s+(character|number)|localized\s+string|offset|summarize|beep|choose\s+(application|color|file(\s+name)?|folder|from\s+list|remote\s+application|URL)|delay|display\s+(alert|dialog)|say)\b</string>
 					<key>name</key>
 					<string>support.function.built-in.command.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(get|run)\b</string>
+					<string>\b(?i:get|run)\b</string>
 					<key>name</key>
 					<string>support.function.built-in.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(anything|data|text|upper\s+case|propert(y|ies))\b</string>
+					<string>\b(?i:anything|data|text|upper\s+case|propert(y|ies))\b</string>
 					<key>name</key>
 					<string>support.class.built-in.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(alias|class)(es)?\b</string>
+					<string>\b(?i:alias|class)(es)?\b</string>
 					<key>name</key>
 					<string>support.class.built-in.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(app(lication)?|boolean|character|constant|date|event|file(\s+specification)?|handler|integer|item|keystroke|linked\s+list|list|machine|number|picture|preposition|POSIX\s+file|real|record|reference(\s+form)?|RGB\s+color|script|sound|text\s+item|type\s+class|vector|writing\s+code(\s+info)?|zone|((international|styled(\s+(Clipboard|Unicode))?|Unicode)\s+)?text|((C|encoded|Pascal)\s+)?string)s?\b</string>
+					<string>\b(?i:app(lication)?|boolean|character|constant|date|event|file(\s+specification)?|handler|integer|item|keystroke|linked\s+list|list|machine|number|picture|preposition|POSIX\s+file|real|record|reference(\s+form)?|RGB\s+color|script|sound|text\s+item|type\s+class|vector|writing\s+code(\s+info)?|zone|((international|styled(\s+(Clipboard|Unicode))?|Unicode)\s+)?text|((C|encoded|Pascal)\s+)?string)s?\b</string>
 					<key>name</key>
 					<string>support.class.built-in.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b((cubic |square |cubic centi|square kilo|centi|kilo)met(er|re)s|(square |cubic )?(yards|feet)|(square )?miles|(cubic )?inches|lit(re|er)s|gallons|quarts|(kilo)?grams|ounces|pounds|degrees (Celsius|Fahrenheit|Kelvin))\b</string>
+					<string>\b(?i:(cubic |square |cubic centi|square kilo|centi|kilo)met(er|re)s|(square |cubic )?(yards|feet)|(square )?miles|(cubic )?inches|lit(re|er)s|gallons|quarts|(kilo)?grams|ounces|pounds|degrees (Celsius|Fahrenheit|Kelvin))\b</string>
 					<key>name</key>
 					<string>support.class.built-in.unit.applescript</string>
 				</dict>
 				<dict>
 					<key>match</key>
-					<string>\b(seconds|minutes|hours|days)\b</string>
+					<string>\b(?i:seconds|minutes|hours|days)\b</string>
 					<key>name</key>
 					<string>support.class.built-in.time.applescript</string>
 				</dict>
@@ -1582,10 +1584,7 @@
 						</dict>
 					</dict>
 					<key>comment</key>
-					<string>
-						we cannot necessarily distinguish "records" from
-						"arrays", and so this could be either
-					</string>
+					<string>We cannot necessarily distinguish "records" from "arrays", and so this could be either.</string>
 					<key>end</key>
 					<string>(\})</string>
 					<key>name</key>
