@@ -153,7 +153,15 @@
 				</dict>
 				<dict>
 					<key>begin</key>
-					<string>^\s*(on)\s+(\w+)(?=\s+(above|against|apart from|around|aside from|at|below|beneath|beside|between|by|for|from|instead of|into|on|onto|out of|over|thru|under)\s+)</string>
+					<string>^(?x)
+						\s*(to|on)\s+ 					# "on" or "to"
+						(\w+)							# function name
+						(?:\s+
+							(of|in)\s+					# "of" or "in"
+							(\w+)						# direct parameter
+						)?
+						(?=\s+(above|against|apart\s+from|around|aside\s+from|at|below|beneath|beside|between|by|for|from|instead\s+of|into|on|onto|out\s+of|over|thru|under)\b)
+					</string>
 					<key>beginCaptures</key>
 					<dict>
 						<key>1</key>
@@ -165,6 +173,16 @@
 						<dict>
 							<key>name</key>
 							<string>entity.name.function.handler.applescript</string>
+						</dict>
+						<key>3</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.function.applescript</string>
+						</dict>
+						<key>4</key>
+						<dict>
+							<key>name</key>
+							<string>variable.parameter.handler.direct.applescript</string>
 						</dict>
 					</dict>
 					<key>end</key>
