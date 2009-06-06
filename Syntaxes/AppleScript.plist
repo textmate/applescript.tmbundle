@@ -65,7 +65,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end(?:\s+(script))?)\s*(--.*?)?$</string>
+					<string>^\s*(end(?:\s+(script))?)(?=\s*(--.*?)?$)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -132,7 +132,7 @@
 						we can leave it like this though, as it sorta works.
 					</string>
 					<key>end</key>
-					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
+					<string>^\s*(end)(?:\s+(\2))?(?=\s*(--.*?)?$)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
@@ -168,7 +168,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>^\s*(end)(?:\s+(\2))?\s*(--.*?)?$</string>
+					<string>^\s*(end)(?:\s+(\2))?(?=\s*(--.*?)?$)</string>
 					<key>endCaptures</key>
 					<dict>
 						<key>1</key>
