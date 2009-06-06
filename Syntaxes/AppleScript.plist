@@ -1005,7 +1005,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1038,7 +1038,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1071,7 +1071,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1104,7 +1104,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1137,7 +1137,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1166,7 +1166,7 @@
 						<key>1</key>
 						<dict>
 							<key>name</key>
-							<string>keyword.control.applescript</string>
+							<string>keyword.control.tell.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
