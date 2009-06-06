@@ -1131,6 +1131,35 @@
 				</dict>
 				<dict>
 					<key>begin</key>
+					<string>^\s*(tell)\s+(?=app(lication)?\s+process\b)(?!.*\bto(?!\s+tell)\b)</string>
+					<key>captures</key>
+					<dict>
+						<key>1</key>
+						<dict>
+							<key>name</key>
+							<string>keyword.control.tell.applescript</string>
+						</dict>
+					</dict>
+					<key>comment</key>
+					<string>tell generic application process</string>
+					<key>end</key>
+					<string>^\s*(end(?:\s+tell)?)(?=\s*(--.*?)?$)</string>
+					<key>name</key>
+					<string>meta.block.tell.application-process.generic.applescript</string>
+					<key>patterns</key>
+					<array>
+						<dict>
+							<key>include</key>
+							<string>#standard-suite</string>
+						</dict>
+						<dict>
+							<key>include</key>
+							<string>$self</string>
+						</dict>
+					</array>
+				</dict>
+				<dict>
+					<key>begin</key>
 					<string>^\s*(tell)\s+(?=app(lication)?\b)(?!.*\bto(?!\s+tell)\b)</string>
 					<key>captures</key>
 					<dict>
