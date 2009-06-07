@@ -5,7 +5,21 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>echo 'end tell'</string>
+	<string>#!/usr/bin/env ruby -wKU
+
+def end_what?
+  ENV["TM_SCOPE"].split.reverse_each do |scope|
+    case scope
+    when /^meta\.function\./
+      return 'end'
+    when /^meta\.block\.(\w+)\./
+      return "end #{$1}"
+    end
+  end
+end
+
+puts end_what?
+</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
@@ -15,7 +29,7 @@
 	<key>output</key>
 	<string>afterSelectedText</string>
 	<key>scope</key>
-	<string>source.applescript</string>
+	<string>source.applescript meta.block, source.applescript meta.function</string>
 	<key>uuid</key>
 	<string>99F1A4C2-2156-4F24-902C-0F651B293ECE</string>
 </dict>
