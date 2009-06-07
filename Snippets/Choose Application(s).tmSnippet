@@ -7,7 +7,7 @@
 	/}${3:with multiple selections allowed}
 </string>
 	<key>name</key>
-	<string>Application(s)</string>
+	<string>Choose Application(s)</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>

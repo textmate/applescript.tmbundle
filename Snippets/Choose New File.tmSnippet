@@ -3,17 +3,16 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1/.+/set /}${1:the_url}${1/.+/ to /}choose URL ¬
-	showing ${2:Web} servers ¬
-	with editable URL
-</string>
+	<string>${1:set the_filename to }choose file name with prompt "${2:Name this file:}" ¬
+	default name "${3:untitled}" default location ${4:path to home folder}
+$0</string>
 	<key>name</key>
-	<string>URL</string>
+	<string>Choose New File</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>
 	<string>choose</string>
 	<key>uuid</key>
-	<string>5100F3C7-EC8E-43C3-B844-2F384FCEC6C4</string>
+	<string>DE1A37AA-FB0F-480F-99DC-3D79B35A49C1</string>
 </dict>
 </plist>

@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1/.+/set /}${1:the_item}${1/.+/ to /}choose from list ${2:{"${3:choice}"\}}
-</string>
+	<string>${1:set the_url to }choose URL showing ${2:Web} servers with editable URL
+$0</string>
 	<key>name</key>
-	<string>Item From List</string>
+	<string>Choose URL</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>
 	<string>choose</string>
 	<key>uuid</key>
-	<string>1D418F08-770F-4407-AE6A-3CCF2CD9FA6E</string>
+	<string>5100F3C7-EC8E-43C3-B844-2F384FCEC6C4</string>
 </dict>
 </plist>

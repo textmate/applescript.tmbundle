@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1/.+/set /}${1:the_folder}${1/.+/ to /}choose folder with prompt "${2:Choose a Folder:}"${3/.+/ ¬
-	/}${3:default location ${4:path to home folder}}${5/.+/ ¬
-	/}${5:with invisibles}${6/.+/ ¬
-	/}${6:with multiple selections allowed}${7/.+/ ¬
-	/}${7:with showing package contents}
-</string>
+	<string>${1:set the_folder to }choose folder with prompt "${2:Pick a folder:}"${3: ¬
+	default location path to home folder}${4: ¬
+	with invisibles}${5: ¬
+	with multiple selections allowed}${6: ¬
+	with showing package contents}
+$0</string>
 	<key>name</key>
-	<string>Folder(s)</string>
+	<string>Choose Folder(s)</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>
