@@ -19,7 +19,7 @@ document = File.read(ENV["TM_FILEPATH"])
 TextMate::Executor.run(ENV["TM_OSASCRIPT"] || "osascript", "-ss", ENV["TM_FILEPATH"], :version_args =&gt; ["-e", "\"AppleScript \" &amp; (AppleScript's version as string)"]) do |str, type|
   error_fd ||= IO.for_fd(ENV["TM_ERROR_FD"].to_i)
   case type
-  when :err    # 
+  when :err
     if str =~ /^([^\:]+):(\d+):(\d+): (.*?): (.*) \((-?\d+)\)$/ then
       filepath, start,  stop, err, msg, status = $1, $2.to_i, $3.to_i, $4, $5, $6
     

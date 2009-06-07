@@ -5,14 +5,17 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>read appname
+	<string>#!/bin/bash
+
+read appname
 osascript &lt;&lt;-APPLESCRIPT
 	tell app "Script Editor"
 	    launch
 	    activate
 	    open path to application ${appname}
 	end tell
-APPLESCRIPT</string>
+APPLESCRIPT
+</string>
 	<key>fallbackInput</key>
 	<string>scope</string>
 	<key>input</key>

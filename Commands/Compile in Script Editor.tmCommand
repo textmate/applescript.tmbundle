@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>content () {
+	<string>#!/bin/bash
+
+content () {
 	iconv -cs -f utf-8 -t macroman//TRANSLIT | perl -pe 's/["\\]/\\$&amp;/g'
 }
 
@@ -27,7 +29,7 @@ APPLESCRIPT</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>@b</string>
+	<string>@B</string>
 	<key>name</key>
 	<string>Compile in Script Editor</string>
 	<key>output</key>
