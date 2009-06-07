@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>${1:set shell_stdout to }do shell script ${3:¬
-	"${2:#script}"} ¬
-	without altering line endings
-$0</string>
+	<string>${1/.+/set /}${1:shell_output}${1/.+/ to /}do shell script${2/.+/ ¬
+	/}${2:"${3:script}"}${4/.+/ ¬
+	/}${4:without altering line endings}
+</string>
 	<key>name</key>
 	<string>do shell script …</string>
 	<key>scope</key>

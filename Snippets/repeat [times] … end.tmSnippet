@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>repeat ${1:${2:number} times}
-	${0:-- insert actions here}
+	<string>repeat${1/.+/ /}${1:number}${1/.+/ times/}
+	${0:-- statements}
 end repeat</string>
 	<key>name</key>
-	<string>repeat … end</string>
+	<string>repeat [times] … end</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>
