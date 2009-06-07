@@ -3,12 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>display alert ${1:"${2:alert text}}"${3/.+/ ¬
-	/}${3:message "${4:message text}"}${5/.+/ ¬
-	/}${5:as warning}
-</string>
+	<string>display alert "${1:alert text}" ¬
+	${2:message "${3:message text}" ¬
+	}${4:as warning}</string>
 	<key>name</key>
-	<string>Display Alert</string>
+	<string>Alert</string>
 	<key>scope</key>
 	<string>source.applescript</string>
 	<key>tabTrigger</key>
