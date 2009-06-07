@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>set the_result to display dialog "${1:text}" ¬
-	default answer "${2:type here}" ¬
-	${3:with icon ${4:1} ¬
-	}buttons {"${6:Cancel}", "${5:OK}"} ¬
-	default button "$5"
-set button_pressed to button returned of the_result
-set text_typed to text returned of the_result
-if button_pressed is "$5" then
-	${7:-- action for default button button goes here}
+	<string>display dialog ${1:"${2:text}"} ¬
+	default answer ${3:"${4:default answer}"}${5/.+/ ¬
+	with icon /}${5:1} ¬
+	buttons {"${7:Cancel}", "${6:OK}"} ¬
+	default button "$6"
+set button_pressed to button returned of result
+set text_typed to text returned of result
+if button_pressed is "$6" then
+	${8:-- statements for default button}${9/.+/
 else
-	-- action for cancel button goes here
+	/}${9:-- statements for cancel button}
 end if</string>
 	<key>name</key>
 	<string>Text Field</string>
