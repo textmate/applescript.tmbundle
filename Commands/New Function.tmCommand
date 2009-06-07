@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>beforeRunningCommand</key>
@@ -7,14 +7,20 @@
 	<key>command</key>
 	<string>#!/bin/bash
 
-# Turn the selected text into a function with positional
-# arguments.
+# Turn the selected text into a function with
+# positional arguments.
+
+NAME="$(cat)"
+if [[ -z "$NAME" ]]; then
+	NAME='${1:function_name}'
+fi
 
 cat &lt;&lt;SNIPPET
-on ${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}(\${2:arguments})
-	\${4:--function actions}
-end ${TM_SELECTED_TEXT:-$TM_CURRENT_WORD}
-SNIPPET</string>
+on $NAME(\${2:arguments})
+	\${0:-- statements}
+end $NAME
+SNIPPET
+</string>
 	<key>fallbackInput</key>
 	<string>word</string>
 	<key>input</key>
@@ -27,6 +33,8 @@ SNIPPET</string>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>on</string>
 	<key>uuid</key>
 	<string>883C87A4-C370-4C92-9307-3C46380EE12F</string>
 </dict>
