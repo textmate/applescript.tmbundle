@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>with transaction${1/.+/ /}${1:session}
+	${0:-- statements}
+end transaction</string>
+	<key>name</key>
+	<string>with transaction … end</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>transaction</string>
+	<key>uuid</key>
+	<string>E17ACBC4-BDC8-4ACE-B67A-9148BA4B8B18</string>
+</dict>
+</plist>

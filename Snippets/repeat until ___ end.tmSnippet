@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>repeat until ${1:condition}
+	${0:-- statements}
+end repeat</string>
+	<key>name</key>
+	<string>repeat until ... end</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>rep</string>
+	<key>uuid</key>
+	<string>6CAD1A94-B03B-4E78-B67B-2F3CDAADBAFA</string>
+</dict>
+</plist>

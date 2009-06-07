@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>copy ${1:value} to ${0:location}</string>
+	<key>name</key>
+	<string>copy … to …</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>tabTrigger</key>
+	<string>copy</string>
+	<key>uuid</key>
+	<string>3754B2CC-DB4C-4B2D-9DAF-08CD402BB672</string>
+</dict>
+</plist>
