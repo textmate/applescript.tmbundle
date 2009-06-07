@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
 	<key>content</key>
 	<string>set oldDelims to AppleScript's text item delimiters
 set AppleScript's text item delimiters to {"${1:,}"}
-${0:-- insert actions here}
+${0:-- statements}
 set AppleScript's text item delimiters to oldDelims</string>
 	<key>name</key>
 	<string>change text item delimiters</string>
