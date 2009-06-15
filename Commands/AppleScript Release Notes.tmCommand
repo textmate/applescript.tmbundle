@@ -9,7 +9,8 @@
 
 # The AppleScript Release Notes at apple.com
 
-open "http://developer.apple.com/releasenotes/AppleScript/RN-AppleScript/"</string>
+open "http://developer.apple.com/releasenotes/AppleScript/RN-AppleScript/"
+</string>
 	<key>fallbackInput</key>
 	<string>scope</string>
 	<key>input</key>
