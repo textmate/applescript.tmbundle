@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/bash
+
+# A list of useful AppleScript Resources at
+# macosxautomation.com
+
+# open "http://www.macosxautomation.com/applescript/"
+</string>
+	<key>fallbackInput</key>
+	<string>scope</string>
+	<key>input</key>
+	<string>none</string>
+	<key>keyEquivalent</key>
+	<string>^h</string>
+	<key>name</key>
+	<string>Mac OS X Automation Resources</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>uuid</key>
+	<string>BA54AD1A-04AC-4CD1-B282-7F65D58EFE2B</string>
+</dict>
+</plist>
