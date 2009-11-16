@@ -29,7 +29,7 @@ APPLESCRIPT</string>
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>@B</string>
+	<string>~@b</string>
 	<key>name</key>
 	<string>Compile in Script Editor</string>
 	<key>output</key>
