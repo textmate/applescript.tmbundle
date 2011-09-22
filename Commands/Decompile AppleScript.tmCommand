@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/bin/sh
+"$TM_BUNDLE_SUPPORT/decompile_as"
+</string>
+	<key>contentMatch</key>
+	<string>\AFasdUAS 1.101.10</string>
+	<key>eventSpecifier</key>
+	<string>event.document.import.binary</string>
+	<key>hideFromUser</key>
+	<string>1</string>
+	<key>input</key>
+	<string>document</string>
+	<key>name</key>
+	<string>Decompile AppleScript</string>
+	<key>output</key>
+	<string>replaceDocument</string>
+	<key>uuid</key>
+	<string>5C7D926C-E9A4-424F-876A-D1D8DE8CE02F</string>
+</dict>
+</plist>
