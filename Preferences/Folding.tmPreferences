@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>Folding</string>
+	<key>scope</key>
+	<string>source.applescript</string>
+	<key>settings</key>
+	<dict>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+		^\s*
+		(
+		 tell \s+ (?! .* \b(to)\b) .*
+		|tell\b.*?\bto\ tell \s+ (?! .* \b(to)\b) .*
+		|using \s+ terms \s+ from \s+ .*
+		|if\b .* \bthen\b
+		|repeat\b .*
+		|( on | to )\b (?!\s+ error) .*
+		|try\b
+		|with \s+ timeout\b .*
+		|script\b .*
+		|( considering | ignoring )\b .*
+		)\s*(--.*?)?$
+	</string>
+	<key>foldingStopMarker</key>
+	<string>^\s*end\b.*$</string>
+	</dict>
+	<key>uuid</key>
+	<string>30F4F4CB-26DE-414B-A2CC-A251D06D413F</string>
+</dict>
+</plist>

@@ -9,24 +9,6 @@
 	</array>
 	<key>firstLineMatch</key>
 	<string>^#!.*(osascript)</string>
-	<key>foldingStartMarker</key>
-	<string>(?x)
-		^\s*
-		(
-		 tell \s+ (?! .* \b(to)\b) .*
-		|tell\b.*?\bto\ tell \s+ (?! .* \b(to)\b) .*
-		|using \s+ terms \s+ from \s+ .*
-		|if\b .* \bthen\b
-		|repeat\b .*
-		|( on | to )\b (?!\s+ error) .*
-		|try\b
-		|with \s+ timeout\b .*
-		|script\b .*
-		|( considering | ignoring )\b .*
-		)\s*(--.*?)?$
-	</string>
-	<key>foldingStopMarker</key>
-	<string>^\s*end\b.*$</string>
 	<key>keyEquivalent</key>
 	<string>^~A</string>
 	<key>name</key>
