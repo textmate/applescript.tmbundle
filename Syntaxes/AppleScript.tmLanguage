@@ -120,7 +120,7 @@
 						<key>3</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.parameters.applescript</string>
+							<string>punctuation.definition.parameters.begin.applescript</string>
 						</dict>
 						<key>4</key>
 						<dict>
@@ -130,7 +130,7 @@
 						<key>5</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.parameters.applescript</string>
+							<string>punctuation.definition.parameters.end.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
@@ -1535,16 +1535,24 @@
 				<dict>
 					<key>begin</key>
 					<string>\(\*</string>
-					<key>captures</key>
+					<key>beginCaptures</key>
 					<dict>
 						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.definition.comment.applescript</string>
+							<string>punctuation.definition.comment.begin.applescript</string>
 						</dict>
 					</dict>
 					<key>end</key>
 					<string>\*\)</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.comment.end.applescript</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>comment.block.applescript</string>
 					<key>patterns</key>
@@ -1563,19 +1571,27 @@
 			<array>
 				<dict>
 					<key>begin</key>
-					<string>(\{)</string>
-					<key>captures</key>
+					<string>\{</string>
+					<key>beginCaptures</key>
 					<dict>
-						<key>1</key>
+						<key>0</key>
 						<dict>
 							<key>name</key>
-							<string>punctuation.section.array.applescript</string>
+							<string>punctuation.definition.array.begin.applescript</string>
 						</dict>
 					</dict>
 					<key>comment</key>
 					<string>We cannot necessarily distinguish "records" from "arrays", and so this could be either.</string>
 					<key>end</key>
-					<string>(\})</string>
+					<string>\}</string>
+					<key>endCaptures</key>
+					<dict>
+						<key>0</key>
+						<dict>
+							<key>name</key>
+							<string>punctuation.definition.array.end.applescript</string>
+						</dict>
+					</dict>
 					<key>name</key>
 					<string>meta.array.applescript</string>
 					<key>patterns</key>
