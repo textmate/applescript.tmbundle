@@ -10,17 +10,25 @@
 </string>
 	<key>contentMatch</key>
 	<string>\AFasdUAS 1.101.10</string>
-	<key>eventSpecifier</key>
-	<string>event.document.import.binary</string>
 	<key>hideFromUser</key>
 	<string>1</string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>name</key>
 	<string>Decompile AppleScript</string>
-	<key>output</key>
+	<key>outputCaret</key>
+	<string>interpolateByLine</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
 	<string>replaceDocument</string>
+	<key>semanticClass</key>
+	<string>callback.document.binary-import</string>
 	<key>uuid</key>
 	<string>5C7D926C-E9A4-424F-876A-D1D8DE8CE02F</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
