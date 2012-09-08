@@ -20,15 +20,25 @@ APPLESCRIPT
 	<string>scope</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>^h</string>
 	<key>name</key>
 	<string>Documentation for Application</string>
-	<key>output</key>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
 	<string>discard</string>
 	<key>scope</key>
 	<string>string.quoted.double.application-name.applescript</string>
+	<key>semanticClass</key>
+	<string>lookup.define.applescript</string>
 	<key>uuid</key>
 	<string>2263B3B6-8D09-4B98-B056-3DF129226C78</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

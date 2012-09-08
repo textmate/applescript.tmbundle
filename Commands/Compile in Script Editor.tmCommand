@@ -28,15 +28,25 @@ osascript &lt;&lt;-APPLESCRIPT
 APPLESCRIPT</string>
 	<key>input</key>
 	<string>selection</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>~@b</string>
 	<key>name</key>
 	<string>Compile in Script Editor</string>
-	<key>output</key>
-	<string>showAsTooltip</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>text</string>
+	<key>outputLocation</key>
+	<string>toolTip</string>
 	<key>scope</key>
 	<string>source.applescript</string>
+	<key>semanticClass</key>
+	<string>process.external.build.applescript</string>
 	<key>uuid</key>
 	<string>E3DD341F-94E6-460C-8EDA-D1184B67866F</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>

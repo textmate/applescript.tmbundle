@@ -75,15 +75,25 @@ end
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>inputFormat</key>
+	<string>text</string>
 	<key>keyEquivalent</key>
 	<string>@b</string>
 	<key>name</key>
 	<string>Compile</string>
-	<key>output</key>
-	<string>showAsHTML</string>
+	<key>outputCaret</key>
+	<string>afterOutput</string>
+	<key>outputFormat</key>
+	<string>html</string>
+	<key>outputLocation</key>
+	<string>newWindow</string>
 	<key>scope</key>
 	<string>source.applescript</string>
+	<key>semanticClass</key>
+	<string>process.build.applescript</string>
 	<key>uuid</key>
 	<string>FAA71813-1CC3-45BC-BDC4-EE388D80746C</string>
+	<key>version</key>
+	<integer>2</integer>
 </dict>
 </plist>
