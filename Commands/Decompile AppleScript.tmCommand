@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/sh
-"$TM_BUNDLE_SUPPORT/decompile_as"
+"$TM_BUNDLE_SUPPORT/bin/decompile_as"
 </string>
 	<key>contentMatch</key>
 	<string>\AFasdUAS 1.101.10</string>
@@ -29,6 +29,6 @@
 	<key>uuid</key>
 	<string>5C7D926C-E9A4-424F-876A-D1D8DE8CE02F</string>
 	<key>version</key>
-	<integer>2</integer>
+	<string>2</string>
 </dict>
 </plist>
