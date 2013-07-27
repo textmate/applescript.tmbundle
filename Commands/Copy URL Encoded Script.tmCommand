@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -KA -ruri
+	<string>#!/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin/ruby -KA -ruri
 
 src = 'applescript://com.apple.scripteditor?action=new&amp;script='
 src &lt;&lt; URI.encode(STDIN.read)
