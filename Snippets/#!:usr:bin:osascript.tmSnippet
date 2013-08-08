@@ -3,11 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>#!/usr/bin/osascript</string>
+	<string>#!/usr/bin/osascript
+</string>
 	<key>name</key>
 	<string>#!/usr/bin/osascript</string>
 	<key>scope</key>
-	<string>source.applescript</string>
+	<string>L:dyn.caret.begin.document</string>
 	<key>tabTrigger</key>
 	<string>osa</string>
 	<key>uuid</key>
