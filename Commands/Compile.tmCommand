@@ -18,7 +18,7 @@ error_fd = nil
 document = File.read(ENV["TM_FILEPATH"])
 
 Tempfile::open('tm_osacompile') do |tmpfile|
-  TextMate::Executor.run(ENV["TM_OSACOMPILE"] || "osacompile", "-o", tmpfile.path, ENV["TM_FILEPATH"], :verb =&gt; "Compiling", :use_hashbang =&gt; false, :version_args =&gt; ["-o", tmpfile.path, "-e", "nil"]) do |str, type|
+  TextMate::Executor.run(ENV["TM_OSACOMPILE"] || "osacompile", "-o", tmpfile.path, ENV["TM_FILEPATH"], :create_error_pipe =&gt; true, :verb =&gt; "Compiling", :use_hashbang =&gt; false, :version_args =&gt; ["-o", tmpfile.path, "-e", "nil"]) do |str, type|
     error_fd ||= IO.for_fd(ENV["TM_ERROR_FD"].to_i)
     case type
     when :err
