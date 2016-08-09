@@ -8,7 +8,7 @@
 		<string>script editor</string>
 	</array>
 	<key>firstLineMatch</key>
-	<string>^#!.*(osascript)</string>
+	<string>^#!.*(osascript)(?!(?i:javascript)</string>
 	<key>keyEquivalent</key>
 	<string>^~A</string>
 	<key>name</key>
