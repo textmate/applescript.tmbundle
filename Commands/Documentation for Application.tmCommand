@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/bin/bash
+		<string>#!/bin/bash
 
 read appname
 osascript &lt;&lt;-APPLESCRIPT
@@ -16,10 +16,8 @@ osascript &lt;&lt;-APPLESCRIPT
 	end tell
 APPLESCRIPT
 </string>
-	<key>fallbackInput</key>
-	<string>scope</string>
 	<key>input</key>
-	<string>selection</string>
+	<string>scope</string>
 	<key>inputFormat</key>
 	<string>text</string>
 	<key>keyEquivalent</key>
