@@ -5,6 +5,7 @@
 	<key>fileTypes</key>
 	<array>
 		<string>applescript</string>
+		<string>scpt</string>
 		<string>script editor</string>
 	</array>
 	<key>firstLineMatch</key>
