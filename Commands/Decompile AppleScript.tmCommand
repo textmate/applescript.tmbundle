@@ -6,7 +6,10 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/bin/sh
-"$TM_BUNDLE_SUPPORT/bin/decompile_as"
+SCRIPT_FILE="$(/usr/bin/mktemp)"
+trap 'rm "$SCRIPT_FILE"' EXIT
+cat &gt; "$SCRIPT_FILE"
+/usr/bin/osadecompile "$SCRIPT_FILE"
 </string>
 	<key>contentMatch</key>
 	<string>\AFasdUAS 1.101.10</string>
@@ -29,6 +32,6 @@
 	<key>uuid</key>
 	<string>5C7D926C-E9A4-424F-876A-D1D8DE8CE02F</string>
 	<key>version</key>
-	<string>2</string>
+	<integer>2</integer>
 </dict>
 </plist>
