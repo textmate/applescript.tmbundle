@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby18
+		<string>#!/usr/bin/env ruby18
 
 require ENV["TM_SUPPORT_PATH"] + "/lib/tm/executor"
 require ENV["TM_SUPPORT_PATH"] + "/lib/tm/save_current_document"
@@ -15,8 +15,14 @@ TextMate::Executor.make_project_master_current_document
 
 error_fd = nil
 document = File.read(ENV["TM_FILEPATH"])
+language = case ENV["TM_SCOPE"]
+  when /^source\.js/
+    "JavaScript"
+  else
+    "AppleScript"
+  end
 
-TextMate::Executor.run(ENV["TM_OSASCRIPT"] || "osascript", "-ss", ENV["TM_FILEPATH"], :create_error_pipe =&gt; true, :version_args =&gt; ["-e", "\"AppleScript \" &amp; (AppleScript's version as string)"]) do |str, type|
+TextMate::Executor.run(ENV["TM_OSASCRIPT"] || "osascript", "-l", language, "-ss", ENV["TM_FILEPATH"], :create_error_pipe =&gt; true, :version_args =&gt; ["-e", "\"AppleScript \" &amp; (AppleScript's version as string)"]) do |str, type|
   error_fd ||= IO.for_fd(ENV["TM_ERROR_FD"].to_i)
   case type
   when :err
@@ -68,7 +74,7 @@ end
 	<key>outputLocation</key>
 	<string>newWindow</string>
 	<key>scope</key>
-	<string>source.applescript</string>
+	<string>source.applescript, source.js</string>
 	<key>semanticClass</key>
 	<string>process.run.script.applescript</string>
 	<key>uuid</key>
